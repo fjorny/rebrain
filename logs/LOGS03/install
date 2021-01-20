@@ -1,0 +1,17 @@
+#work in console
+
+
+
+/opt/td-agent/bin/fluent-gem install fluent-plugin-remote_syslog
+
+apt install golang-go
+whereis go
+export GOROOT=/usr/bin/
+export GOPATH=$HOME/.go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+go get -u github.com/mingrammer/flog
+apt install qbrew
+qbrew tap mingrammer/flog
+apt install git
+go get -u github.com/mingrammer/flog
+apt install flog
